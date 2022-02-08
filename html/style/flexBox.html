@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .main>div{
+            width:200px;
+            background-color:yellowgreen;
+            padding:10px;
+            margin:20px;
+        }
+        .main{
+            display:flex;
+            /* default direction */
+            /* distribute boxes in direction specified */
+            flex-direction:row;
+            /* default:no-wrap */
+            /* to distribute boxes like no box needs to reduce its size */
+            flex-wrap: wrap;
+            /* distribute each box in a way specified */
+            justify-content:space-evenly;
+            align-content:
+            /* align-items:flex-end; :alligns items to vertical direction */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>four</div>
+        <div>five</div>
+        <div>six</div>
+    </div>
+</body>
+</html>

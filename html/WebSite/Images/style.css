@@ -1,0 +1,58 @@
+h1{
+    margin-left:3rem;
+    font-weight:600; 
+    /* thickness of font */
+}
+li{
+    list-style: none;
+    margin-left: 2rem;
+    padding-top: 8px;
+    font-size: 1.3rem;
+}
+.navbar>nav{
+    display:flex;
+    justify-content:space-between;
+}
+ul{
+    display: flex;
+    margin-right:2rem;
+}
+img[src="images/lap.jpeg"]{
+    height:100vh;
+    width:95vw;
+    margin-left:2vw;
+    margin-right:2vw;
+}
+.part3{
+    display:flex;
+}
+.part3>div{
+    margin-left:1vw;
+    width:30vw;
+    text-align:center;
+    margin-top:2rem;
+}
+.part3>div>p{
+    padding:1rem;
+}
+.footer{
+    /* height:50px; */
+    background-color: black;
+    color: white;
+    text-align: center; 
+    width:95vw;
+    margin-left:2vw;
+    margin-right:2vw;
+}
+.footer>p{
+    font-size: 15px; 
+}
+a:link,a:visited{
+    color:blueviolet;
+}
+a:hover{
+    color:pink;
+}
+a{
+    text-decoration:none;
+}

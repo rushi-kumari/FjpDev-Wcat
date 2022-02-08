@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* internal styling */
+        /* Universl Selector */
+        *{
+            background-color: black;
+        }
+
+       /* p is selected to style: element selectors */
+        div{
+            color:green;
+        }
+        p{
+            color:pink;
+        }
+        /* class selector */
+        .textColor{
+            color: aqua;
+        }
+        .largeText{
+            color:blue
+        }
+        /* Id selector */
+        #unique{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(104, 136, 104);
+        }
+
+        /* Grouping Selector */
+        h2,a,h3{
+            color:yellow;
+        }
+
+        /* purpose of below can served using grouping selector */
+        /* h2{
+            color:yellow;
+        }
+        a{
+            color:yellow;
+        }
+        h3{
+            color:yellow;
+        } */
+
+
+
+        /* Combinatoral Selector */
+        /* decendant Selector */
+        div p span{
+            color:lightblue;
+        }
+        /* child Selector */
+        div>p>span{
+            color:lightblue;
+        }
+
+        /* Attribute Selector */
+        a[target="_blank"]{
+            color:brown
+        }
+        a[href="https://google.com"]{
+            color:aqua;
+        }
+        p[class="abc"]{
+            color:pink;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1> welcome to pepcoding </h1>
+    
+    
+    <div>
+        <h4> welcome to pepcoding </h4>
+   
+        <!-- element selector as well as class selector-->
+        <p class="textColor largeText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+         nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+         libero tempora fugiat.</p>
+
+        <p class="textColor"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+            nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+            libero tempora fugiat.</p>
+
+        <p class="largeText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+                nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+                libero tempora fugiat.</p>
+    </div>
+
+
+
+    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo 
+        nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet libero
+         tempora fugiat.</p>
+
+   
+   
+         <!-- ID selector: uniquely identify element -->
+
+    <p class="textColor largeText" id= "unique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+            nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+            libero tempora fugiat.</p>
+   
+           
+    <p class="textColor"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+               nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+               libero tempora fugiat.</p>
+   
+    <p class="largeText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eligendi quod dolorum modi explicabo
+                   nobis molestiae cumque nisi, quas ratione, commodi blanditiis velit voluptatum sint, ducimus amet 
+                   libero tempora fugiat.</p>
+
+    
+    <!-- Grouping selector -->
+    <h2> welcome to pepcoding </h2>
+    <a href="http://google.com" target="_blank">Google</a>
+    <h3> welcome here </h3>
+
+
+
+    <!-- Combinatoral Selectors -->
+        <!-- Decendant Selector -->
+        <!-- Child Selector -->
+
+        <div>
+            <p> 
+                <span>I am child </span>
+            </p>
+        </div>
+        <div>
+            <span> 
+                <p>
+                    <span>I am a decendant</span>
+                </p>
+            </span>
+        </div>
+
+        <!-- Attribute Selector -->
+        <a href="https://google.com">Google</a>
+        <a href="https://nados.io" target="_blank">Nados</a>
+        <a href="https://netflix.com" target="_blank">Netlix</a>
+        <p class="abc">Hey There!</p>
+
+</body>
+</html>

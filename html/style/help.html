@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size:30px;
+            /* 1 rem = 30 */
+        }
+        .parent{
+            font-size: 35px;
+            /* 1 em = 35 */
+        }
+        .box{
+            background-color: aquamarine;
+            margin: 10px;
+        }
+        .px{
+            width:200px;
+        }
+        .vw{
+            width:10vw;
+        }
+        .em{
+            width:10em;
+        }
+        .rem{
+            width:10rem;
+        }
+        .ems li{
+            font-size: 1.5em;
+        }
+        .rems li{
+            font-size: 1.5rem;
+            /* 1.5*16=24 constant as root is same for all list */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box px">I am 200 px</div>
+        <div class="box vw">I am 10vw wide</div>
+        <div class="parent">
+            <div class="box em">I am 10em wide</div>
+        </div>
+        <div class="box rem">I am 10rem width</div>
+    </div>
+
+
+    <!-- diff bet rem and em -->
+    <ul class = "rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+        <ul>
+            <li>Three a</li>
+            <li>Three b
+            <ul>
+                <li>Three b a</li>
+            </ul>
+        </li>
+        </ul>
+        </l1>
+    </ul>
+
+    <ul class = "ems">
+        <!--  1.5*16=24  -->
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+        <ul>
+            <!-- 1.5*24=36 as parent changes to last list-->
+            <li>Three a</li>
+            <li>Three b
+            <ul>
+                <!-- 1.5*36=54 parents changes to last list -->
+                <li>Three b a</li>
+            </ul>
+        </li>
+        </ul>
+        </l1>
+    </ul>
+</body>
+</html>
