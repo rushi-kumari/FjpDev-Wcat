@@ -34,3 +34,12 @@ var num = 100;
 console.log(`half of ${num} is ${num/2}`);
 //${}:makes things dynamic 
 //only works with backticks
+
+
+//To overcome problem of redeclatrion we used let instead of var
+let r = 20;
+r=200; // can be reintialized
+console.log(r);
+
+let r = 500;
+console.log(r); //cannot be redeclared: SyntaxError
