@@ -103,8 +103,7 @@
 
 const puppeteer = require("puppeteer");
 //let { email, password } = require('./secrets');
- let email = "rushi2rushionline@gmail.com";
- let password = "jh01ax9302";
+
 let { answer } = require("./codes");
 let curTab;
 let browserOpenPromise = puppeteer.launch({
